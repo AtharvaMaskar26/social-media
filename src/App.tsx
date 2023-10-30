@@ -16,12 +16,10 @@ import RootLayout from "./_root/RootLayout";
 import SignupForm from "@/_auth/forms/SignupForm";
 import SigninForm from "@/_auth/forms/SigninForm";
 import { Toaster } from "@/components/ui/toaster";
-import axios from "axios"
 
 import "./globals.css";
 
-const App = async() => {
-
+const App = () => {
 
   return (
     <main className="flex h-screen">
