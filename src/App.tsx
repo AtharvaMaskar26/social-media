@@ -19,7 +19,16 @@ import { Toaster } from "@/components/ui/toaster";
 
 import "./globals.css";
 
+const backend = 'http://localhost:5000';
+
 const App = () => {
+  fetch(`${backend}`) // Replace with your API endpoint
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    
+  })
+  .catch((error) => console.error(error));
 
   return (
     <main className="flex h-screen">
