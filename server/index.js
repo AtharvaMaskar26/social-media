@@ -2,9 +2,10 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const port = process.env.PORT;
+app.use(cors())
 
 // Enable CORS for a specific route
-app.get('/', cors(), (req, res) => {
+app.get('/', (req, res) => {
   const data = { message: 'Hello from Express!' };
   res.json(data);
 });
